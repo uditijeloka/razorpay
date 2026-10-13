@@ -4,9 +4,7 @@ Contest a payment dispute from your phone in under 2 minutes.
 
 A concept prototype for the Razorpay x ISB Build Challenge, Track 1: Razorpay in Your Pocket.
 
-- **Live prototype:** ADD_VERCEL_LINK
-- **Demo video:** ADD_VIDEO_LINK
-- **Product note:** ADD_PDF_LINK
+- **Live prototype:** https://razorpay-nu-nine.vercel.app/
 - **How it works under the hood:** [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## The problem
