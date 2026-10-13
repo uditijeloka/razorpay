@@ -552,7 +552,7 @@ textarea:focus { border-color: var(--blue); outline: none; }
       else if (S.dispute === "won" && !S.ackFinal) alert = `<div class="alert green final">${ICON.check}<span class="t" data-disp="d1"><span class="lbl">Final decision</span><b>Dispute won</b><small>${plain(DISPUTED)} is back in your balance. Ananya R.'s dispute is closed.</small></span><button class="btn btn-line btn-sm" data-action="ack">Got it</button></div>`;
       else if (S.dispute === "lost" && !S.ackFinal) alert = `<div class="alert grey final">${ICON.alert}<span class="t" data-disp="d1"><span class="lbl">Final decision</span><b>${S.accepted ? "Dispute accepted" : "Dispute lost"}</b><small>${plain(DISPUTED)} went to the customer. Ananya R.'s dispute is closed.</small></span><button class="btn btn-line btn-sm" data-action="ack">Got it</button></div>`;
       return `
-        <div class="hello"><span class="av">TS</span><span class="who"><small>Good evening</small><b>Threadline Studio</b></span><button class="iconbtn" aria-label="Notifications" data-action="bell">${ICON.bell}${S.dispute === "open" ? '<span class="dot"></span>' : ""}</button></div>
+        <div class="hello"><span class="av">TS</span><span class="who"><small>Good evening</small><b>Hook & Yarn</b></span><button class="iconbtn" aria-label="Notifications" data-action="bell">${ICON.bell}${S.dispute === "open" ? '<span class="dot"></span>' : ""}</button></div>
         <div class="bal"><div class="lbl2">Account balance</div><div class="amt num"><span>${money(balance())}</span>${ICON.eye}</div>${onHold() ? `<div class="onhold">${plain(DISPUTED)} on hold for a dispute</div>` : ""}</div>
         <div class="scroll">
           ${alert}
