@@ -6,6 +6,7 @@ Built for the Razorpay x ISB Build Challenge, Track 1: Razorpay in Your Pocket.
 
 - **Demo video:** razorpay-prototype.vercel.app
 - **Technical notes:** [ARCHITECTURE.md](ARCHITECTURE.md)
+- **AI build log:** [AI_BUILD_LOG.md](AI_BUILD_LOG.md)
 
 ## The problem
 
