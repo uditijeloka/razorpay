@@ -1,8 +1,5 @@
 # AI build log
 
-Razorpay x ISB Build Challenge, Track 1: Razorpay in Your Pocket
-Concept: letting small sellers respond to card payment disputes from the Razorpay app
-
 ## 1. AI tools and models used
 
 | Tool | Model | Used for |
@@ -12,7 +9,7 @@ Concept: letting small sellers respond to card payment disputes from the Razorpa
 
 Other tools, no AI: GitHub, Vercel, macOS screen recording.
 
-I used AI to speed up research and to consolidate and structure my own thinking. The problem choice, the core idea, the product decisions and the demo recording are mine.
+I used AI to speed up research and to consolidate and structure my own thinking. The core idea, the product decisions and the demo recording are mine.
 
 ## 2. Workflow
 
@@ -24,28 +21,26 @@ I set up the research myself: compare what sellers can do on the Razorpay websit
 I then triangulated the two outputs against primary sources (Razorpay's own docs and the review pages). Anything that couldn't be traced to a source was dropped.
 
 **Picking the problem**
-Claude shortlisted five merchant tasks. I scored them against five filters I defined: money at stake, use away from a desk, frequency, whether it can be done in 2 minutes, and a clear workaround today. Disputes passed all five. I dropped Settle Now (a convenience, not a loss) and held payments (the outcome depends on Razorpay's own review). The "collect proof when the order ships" angle came out of a discussion about how to stand out from other candidates likely to pick the same problem. I chose to make it the core of the solution.
+Claude shortlisted five merchant tasks. I scored them against filters I defined such as use away from a desk, frequency of use, whether it can be done in 2 minutes and a clear workaround today. Disputes passed all. I dropped Settle Now (a convenience, not a loss) and held payments (the outcome depends on Razorpay's own review). I chose to make "collect proof when the order ships" angle the core of the solution. 
 
 **Product note**
-I used Claude to consolidate my research and decisions into a one-page note. I directed several rounds of revisions: removing an AI-suggested persona in favour of a merchant segment, rewriting in plain language, applying Razorpay's colours, replacing screenshots with a "How I found this problem" section, and adding risks and why the idea matters to Razorpay.
+I used Claude to consolidate my research and decisions into a one-page note. I directed several rounds of revisions: removing an AI-suggested persona in favour of a merchant segment, rewriting, applying better designs, adding a "How I found this problem" section, and adding risks and why the idea matters to Razorpay.
 
 **Prototype (spec first, then build)**
 I wrote the requirements and had Claude generate the code: a single static HTML, CSS and JavaScript file with no backend. Before each major change I asked for a written plan, reviewed it, then approved the build. I grounded the design in two references I supplied: Razorpay's disputes documentation for the logic, and App Store screenshots of the Razorpay app for the look.
 
 **Demo video**
-I recorded the demo myself, with my own clicks and voice, from a script I iterated on until it sounded natural. Afterwards I used Claude only to add an animated opening, an ending and one confetti moment, keeping my recording, audio and timing unchanged.
+I recorded the demo myself, with my own clicks and voice. Afterwards I used Claude only to add an animated opening, an ending and one confetti moment, keeping my recording, audio and timing unchanged.
 
 ## 3. Key prompts
 
 | Prompt (paraphrased) | Effect |
 | --- | --- |
-| "Write a prompt for Gemini to research this," followed by "Now do whatever research you can" | Two independent research passes to triangulate |
 | "Here are Gemini's exact sources for these figures" | Forced a re-check against the primary source (section 4) |
 | "See how disputes work in Razorpay's docs. It should have statuses. Make the theme match the Razorpay app. Before building, list every change you will make." | Prototype grounded in Razorpay's real dispute model and UI, with a plan reviewed before any code |
 | "Keep the timer outside the app" | Demo instrumentation separated from the product UI |
 | "The final decision isn't visible on Home. Research whether Razorpay shows these statuses today, and if not, add them." | Found a real product gap and designed for it |
-| "README and architecture notes seem similar" | Split into product docs and technical docs |
-| "Go through every file. Flag anything that reads as AI-generated." | A review pass to remove generic names and phrasing |
+| "Go through every file. Flag anything that might not be factually correct." | A review pass to remove hallucinations |
 
 ## 4. AI outputs I corrected
 
