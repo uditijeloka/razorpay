@@ -4,7 +4,7 @@ A concept prototype that lets small sellers respond to card payment disputes fro
 
 Built for the Razorpay x ISB Build Challenge, Track 1: Razorpay in Your Pocket.
 
-- **Demo video:** ADD_VIDEO_LINK
+- **Demo video:** razorpay-prototype.vercel.app
 - **Technical notes:** [ARCHITECTURE.md](ARCHITECTURE.md)
 
 ## The problem
